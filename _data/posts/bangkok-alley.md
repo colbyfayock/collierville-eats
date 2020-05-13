@@ -6,4 +6,5 @@ category: Local
 phone: 901-854-8747
 website: http://www.bangkokalley.com/
 services: curbside pickup
+location: 35.053509, -89.734628
 ---

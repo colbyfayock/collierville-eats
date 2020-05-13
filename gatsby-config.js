@@ -3,7 +3,6 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -13,7 +12,7 @@ module.exports = {
     home: {
       title: `Collierville COVID-19 Restaurant Guide`,
       description: `Below is a list of Restaurants open for Carry-Out or Delivery in Collierville during the 2020 Coronavirus Pandemic`,
-    }
+    },
   },
   plugins: [
     {
@@ -26,19 +25,21 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
-          resolve: `gatsby-remark-prismjs`,
-          options: {
-            classPrefix: "language-",
-            inlineCodeMarker: null,
-            aliases: {},
-            showLineNumbers: false,
-            noInlineHighlight: false,
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
           },
-        },
-        {
-          resolve: 'gatsby-remark-emojis',
-        }],
+          {
+            resolve: "gatsby-remark-emojis",
+          },
+        ],
       },
     },
     {
@@ -47,9 +48,10 @@ module.exports = {
         // The property ID; the tracking code won't be generated without it
         trackingId: "UA-162409003-1",
         head: false,
-      }
+      },
     },
-    `gatsby-plugin-sass`, 
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-leaflet",
   ],
-}
+};

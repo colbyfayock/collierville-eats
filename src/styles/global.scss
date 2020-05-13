@@ -142,7 +142,7 @@ a {
   }
 }
 /* Portrait and Landscape */
-@media only screen 
+@media only screen
 and (max-width: 768px) {
   .button-row {
     justify-content: space-evenly;
@@ -157,13 +157,13 @@ and (max-width: 768px) {
   }
 }
 
-@media only screen 
+@media only screen
 and (min-width: 768px) {
 .grids {
   grid-template-columns: 1fr 1fr;
 }
 }
-@media only screen 
+@media only screen
   and (min-width: 1024px) {
   .grids {
     grid-template-columns: 1fr 1fr 1fr;
@@ -173,4 +173,17 @@ and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 64px;
   }
+}
+
+.leaflet-popup-content {
+
+  h3 {
+    margin: 0;
+  }
+
+  ul {
+    padding-left: 1.2em;
+    margin: 0;
+  }
+
 }
